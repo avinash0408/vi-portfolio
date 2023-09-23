@@ -1,18 +1,20 @@
-import React,{ useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
-import { GlobalStyle,theme } from '../styles';
+import { GlobalStyle, theme } from '../styles';
 import NavBar from './navbar';
-
+import SocialApps from './fragments/social';
+import Mail from './fragments/mail';
 
 
 const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 `;
 
-const Layout = ({children,location}) => {
+const Layout = ({ children, location }) => {
   const isHome = location.pathname === '/';
   const [isLoading, setIsLoading] = useState(isHome);
   useEffect(() => {
@@ -24,10 +26,14 @@ const Layout = ({children,location}) => {
   return (
     <main>
       <div id="root">
-      <ThemeProvider theme={theme}>
-      <GlobalStyle /> 
-    <NavBar></NavBar>
-     </ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <GlobalStyle />
+          <StyledContent>
+            <NavBar />
+            <SocialApps/>
+            <Mail/>
+          </StyledContent>
+        </ThemeProvider>
       </div>
       <div id="content">
         {children}
