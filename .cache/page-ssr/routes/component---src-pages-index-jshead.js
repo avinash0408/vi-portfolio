@@ -2223,7 +2223,7 @@ const StyledLinks = styled_components__WEBPACK_IMPORTED_MODULE_4__["default"].di
 }) => theme.mixins.smallButton);
 const ResumeLink = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
   className: "resume-button",
-  href: "../vi_resume.pdf",
+  href: "/vi_resume.pdf",
   target: "_blank",
   rel: "noopener noreferrer"
 }, "Resume");
