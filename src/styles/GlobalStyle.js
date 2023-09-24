@@ -9,6 +9,13 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     scroll-behavior: smooth;
   }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
   body {
     background-color: var(--navy);
     color: var(--lightest-slate);
@@ -27,6 +34,52 @@ const GlobalStyle = createGlobalStyle`
   li {
 
   }
+  main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 200px 150px;
+
+    @media (max-width: 1080px) {
+      padding: 200px 100px;
+    }
+    @media (max-width: 768px) {
+      padding: 150px 50px;
+    }
+    @media (max-width: 480px) {
+      padding: 125px 25px;
+    }
+
+    &.fillHeight {
+      padding: 0 150px;
+
+      @media (max-width: 1080px) {
+        padding: 0 145px;
+      }
+      @media (max-width: 768px) {
+        padding: 0 60px;
+      }
+      @media (max-width: 480px) {
+        padding: 0 30px;
+      }
+    }
+  }
+  section {
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1000px;
+
+    @media (max-width: 768px) {
+      padding: 80px 0;
+    }
+
+    @media (max-width: 480px) {
+      padding: 60px 0;
+    }
+  }
+
+  
 `;
 
 export default GlobalStyle;

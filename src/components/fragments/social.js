@@ -40,7 +40,7 @@ const StyledSocialList = styled.ul`
 `;
 const SocialApps = () => {
     return (
-        <main>
+        <>
             <SideBar orientation="left">
                 <StyledSocialList>
                     {socialMedia &&
@@ -53,7 +53,7 @@ const SocialApps = () => {
                         ))}
                 </StyledSocialList>
             </SideBar>
-        </main>
+        </>
     );
 }
 

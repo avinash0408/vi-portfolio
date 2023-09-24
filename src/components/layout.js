@@ -11,7 +11,6 @@ const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 `;
 
 const Layout = ({ children, location }) => {
@@ -24,21 +23,21 @@ const Layout = ({ children, location }) => {
 
   });
   return (
-    <main>
+    <>
       <div id="root">
         <ThemeProvider theme={theme}>
           <GlobalStyle />
           <StyledContent>
             <NavBar />
-            <SocialApps/>
-            <Mail/>
+            <SocialApps />
+            <Mail />
+            <div id="content">
+              {children}
+            </div>
           </StyledContent>
         </ThemeProvider>
       </div>
-      <div id="content">
-        {children}
-      </div>
-    </main>
+    </>
   );
 };
 Layout.propTypes = {

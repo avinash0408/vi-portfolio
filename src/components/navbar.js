@@ -90,14 +90,14 @@ const ResumeLink = (
   );
 
   const Logo = (
-    <a className="logo">
+    <a className="logo" href="/">
         <IconLogo />
     </a>
   );
 
 const NavBar = ({ itemName, itemLink, isSelected }) => {
     return (
-        <main>
+        <>
             <GlobalStyle />
             <StyledHeader>
                 <StyledNavBar>
@@ -105,7 +105,7 @@ const NavBar = ({ itemName, itemLink, isSelected }) => {
                     <StyledLinks>
                     <ul>
                         <li>
-                            <Link to='/'>About</Link>
+                            <Link to='/#about'>About</Link>
                         </li>
                         <li>
                             <Link to="/">Experiecne</Link>
@@ -116,9 +116,10 @@ const NavBar = ({ itemName, itemLink, isSelected }) => {
                     </ul>
                     <div>{ResumeLink}</div>
                     </StyledLinks>
+
                 </StyledNavBar>
             </StyledHeader>
-        </main>
+        </>
     )
 }
 

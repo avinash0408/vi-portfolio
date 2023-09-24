@@ -1,16 +1,22 @@
 import * as React from "react"
 import styled from 'styled-components';
-import AboutFragment from "../components/fragments/about"
+import {IntroFragment,AboutFragment} from "../components/fragments/index"
 import Layout from '../components/layout'
 
 const StyledMain = styled.main`
-  
+margin: 0px auto;
+width: 100%;
+max-width: 1600px;
+min-height: 100vh;
 `;
 const HomePage = ({location}) => {
   <script src="https://kit.fontawesome.com/e1e7e23ed1.js" crossorigin="anonymous"></script>
   return (
     <Layout location={location}>
-        <AboutFragment></AboutFragment>
+      <StyledMain className="fillHeight">
+        <IntroFragment/>
+       <AboutFragment/> 
+      </StyledMain>
     </Layout>
   )
 }

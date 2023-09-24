@@ -36,7 +36,7 @@ const StyledSocialList = styled.ul`
 `;
 const Mail = () => {
     return (
-        <main>
+        <>
             <SideBar orientation="right">
                 <StyledSocialList>
                     <a>
@@ -44,7 +44,7 @@ const Mail = () => {
                     </a>
                 </StyledSocialList>
             </SideBar>
-        </main>
+        </>
     );
 }
 
