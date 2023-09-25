@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const StyledAboutSection = styled.section`
+const StyledExperienceSection = styled.section`
   max-width: 900px;
   display:flex;
   flex-direction: column;
@@ -37,11 +37,11 @@ const StyledAboutSection = styled.section`
 
 
 
-const AboutFragment = () => {
+const ExperienceFragment = () => {
 
     return (
-        <StyledAboutSection id="about">
-            <h2 className="sideHeading">About Me</h2>
+        <StyledExperienceSection id="experience">
+            <h2 className="sideHeading reverse">Work Experience</h2>
 
             <div className="inner">
                     <p>
@@ -54,8 +54,8 @@ const AboutFragment = () => {
                         With an aspiration to transition into freelance full-stack development, I look forward to applying my skills in diverse settings and taking on projects that provide both creative and technical challenges. My technical prowess coupled with my fervor for this field makes me a valuable addition to any team.
                     </p>
             </div>
-        </StyledAboutSection>
+        </StyledExperienceSection>
     );
 };
 
-export default AboutFragment;
+export default ExperienceFragment;

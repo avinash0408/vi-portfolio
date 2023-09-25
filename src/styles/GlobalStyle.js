@@ -79,6 +79,63 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .sideHeading{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 40px;
+    width: 100%;
+    white-space: nowrap;
+
+    color: var(--green);
+    font-size: var(--fz-heading);
+
+    &:after{
+        content: '';
+        display: block;
+        background-color: var(--dark-slate);
+        position: relative;
+        top: -5px;
+        width: 300px;
+        height: 1px;
+        margin-left: 20px;
+  
+        @media (max-width: 1080px) {
+          width: 200px;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        @media (max-width: 600px) {
+          margin-left: 10px;
+        }
+    }
+  }
+  .reverse{
+    &:before{
+        content: '';
+        display: block;
+        background-color: var(--dark-slate);
+        position: relative;
+        top: -5px;
+        width: 300px;
+        height: 1px;
+        margin-right: 20px;
+  
+        @media (max-width: 1080px) {
+          width: 200px;
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        @media (max-width: 600px) {
+          margin-left: 10px;
+        }
+    }
+    &:after{
+        content: none;
+    }
+  }
+
   
 `;
 

@@ -9,6 +9,7 @@ import Mail from './fragments/mail';
 
 const StyledContent = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   min-height: 100vh;
 `;

@@ -3,11 +3,11 @@ import { Link } from "gatsby"
 import styled from 'styled-components';
 import GlobalStyle from "../styles/GlobalStyle";
 import { IconLogo } from './icons/index';
-
+    
 
 const StyledHeader = styled.header`
 ${({ theme }) => theme.mixins.flexBetween};
-  position = fixed;
+  position :absolute;
   top: 0;
   z-index: 11;
   padding: 0px 50px;
@@ -108,7 +108,7 @@ const NavBar = ({ itemName, itemLink, isSelected }) => {
                             <Link to='/#about'>About</Link>
                         </li>
                         <li>
-                            <Link to="/">Experiecne</Link>
+                            <Link to="/#experience">Experiecne</Link>
                         </li>
                         <li>
                             <Link to="/">Contact</Link>

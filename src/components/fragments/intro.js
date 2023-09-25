@@ -4,11 +4,12 @@ import styled from 'styled-components';
 
 const StyledIntroSection = styled.section`
   display:flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: flex-start;
   min-height:100vh;
   height:100vh;
-  padding: 125px 0 0 0;
+  padding: 275px 0 0 0;
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
     height: auto;

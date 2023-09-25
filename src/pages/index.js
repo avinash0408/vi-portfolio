@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled from 'styled-components';
-import {IntroFragment,AboutFragment} from "../components/fragments/index"
-import Layout from '../components/layout'
+import {IntroFragment,AboutFragment,ExperienceFragment} from "../components/fragments/index";
+import Layout from '../components/layout';
 
 const StyledMain = styled.main`
 margin: 0px auto;
@@ -16,6 +16,7 @@ const HomePage = ({location}) => {
       <StyledMain className="fillHeight">
         <IntroFragment/>
        <AboutFragment/> 
+       <ExperienceFragment/>
       </StyledMain>
     </Layout>
   )
