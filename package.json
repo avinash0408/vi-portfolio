@@ -14,10 +14,17 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.13",
+    "@mui/material": "^5.14.13",
+    "@netlify/plugin-gatsby": "^3.7.1",
+    "@parcel/watcher-linux-x64-glibc": "^2.3.0",
     "autoprefixer": "^10.4.15",
+    "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.12.4",
     "gatsby-omni-font-loader": "^2.0.2",
-    "babel-plugin-styled-components": "^2.1.4",
+    "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-postcss": "^6.12.0",
     "gatsby-plugin-styled-components": "^6.12.0",
     "postcss": "^8.4.29",
@@ -26,8 +33,6 @@
     "react-helmet": "^6.1.0",
     "styled-components": "^6.0.8",
     "styled-icons": "^10.47.0",
-    "tailwindcss": "^3.3.3",
-    "@netlify/plugin-gatsby": "^3.7.1",
-"gatsby-plugin-netlify": "^5.1.0"
+    "tailwindcss": "^3.3.3"
   }
 }
