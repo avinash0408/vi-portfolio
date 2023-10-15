@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import CustomizedAccordions from '../../components/accordion';
+import { oracleFte, oracleIntern } from '../../config';
 
 const StyledExperienceSection = styled.section`
   max-width: 900px;
@@ -18,7 +19,9 @@ const StyledExperienceSection = styled.section`
     font-family : Poppins;
     font-size : var(--fz-md);
     color: var(--slate);
-    padding :auto;
+    width : 100%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
 
     @media (max-width: 768px) {
       display: block;
@@ -32,7 +35,30 @@ const StyledExperienceSection = styled.section`
     margin-inline-end: 0px;
     line-height: 1.8em;
     }
+
+    .workHeader{
+        display: flex;
+        white-space: nowrap;
+        padding : 0 20px;
+    }
+    .workTitle{
+    display: flex;
+    align-items: center;
+    margin : 0 20px;
+    width: 100%;
+    white-space: nowrap;
+
+    color: var(--blue);
+    font-size: var(--fz-heading);
+    }
+    .JobTitle{
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        width:100%;
+    }
   }
+
 `;
 
 
@@ -44,16 +70,11 @@ const ExperienceFragment = () => {
             <h2 className="sideHeading reverse">Work Experience</h2>
 
             <div className="inner">
-                    <p>
-                        As an Application Developer at Oracle, I bring a unique blend of creativity and technical acumen, backed by a solid foundation in Java, JavaScript, React, Node, and Angular. My passion for web application development has driven me to refine my skills, enabling me to deliver robust and efficient solutions that consistently surpass client expectations.
-                    </p>
-                    <p>
-                        My tenure at Oracle has exposed me to a variety of projects, each one enhancing my problem-solving abilities and deepening my understanding of application development. I am perpetually eager to stay updated with the latest industry technologies and trends.
-                    </p>
-                    <p>
-                        With an aspiration to transition into freelance full-stack development, I look forward to applying my skills in diverse settings and taking on projects that provide both creative and technical challenges. My technical prowess coupled with my fervor for this field makes me a valuable addition to any team.
-                    </p>
+                <h3 className="workTitle">Oracle</h3>
+              <CustomizedAccordions title = "Application Developer II" period = "July, 2022 - Present" summary={oracleFte}></CustomizedAccordions>
+              <CustomizedAccordions title = "Intern - Applications Engineer" period = "May, 2021 - July, 2021" summary={oracleIntern}></CustomizedAccordions>
             </div>
+
         </StyledExperienceSection>
     );
 };
