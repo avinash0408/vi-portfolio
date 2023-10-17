@@ -135,6 +135,14 @@ const GlobalStyle = createGlobalStyle`
         content: none;
     }
   }
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
 
   
 `;

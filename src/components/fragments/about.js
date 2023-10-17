@@ -7,8 +7,6 @@ const StyledAboutSection = styled.section`
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height:100vh;
-  height:100vh;
   padding: 125px 0 0 0;
   
   h2{

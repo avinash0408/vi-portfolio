@@ -8,8 +8,6 @@ const StyledExperienceSection = styled.section`
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
-  min-height:100vh;
-  height:100vh;
   padding: 125px 0 0 0;
   
   h2{
@@ -67,7 +65,7 @@ const ExperienceFragment = () => {
 
     return (
         <StyledExperienceSection id="experience">
-            <h2 className="sideHeading reverse">Work Experience</h2>
+            <h2 className="sideHeading">Work Experience</h2>
 
             <div className="inner">
                 <h3 className="workTitle">Oracle</h3>

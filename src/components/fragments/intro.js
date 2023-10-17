@@ -7,8 +7,7 @@ const StyledIntroSection = styled.section`
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  min-height:100vh;
-  height:100vh;
+  height:75vh;
   padding: 275px 0 0 0;
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
