@@ -172,6 +172,25 @@ const GlobalStyle = createGlobalStyle`
     height: 0;
     }
 
+  .title-wrap{
+    display:flex;
+    width:100%;
+    white-space: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+      flex-direction:column;
+    }
+  }
+  .period{
+    @media screen and (max-width: 480px) {
+      font-size:var(--fz-xxs);
+      color:var(--lightest-slate);
+      margin-block-start:0.4em !important;
+    }
+  }
+
 
 `;
 

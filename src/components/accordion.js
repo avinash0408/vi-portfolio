@@ -43,12 +43,8 @@ const AccordionDetails = styled('div')(({ theme }) => ({
 }));
 
 const MyWorkHeader = styled('div')(({theme}) => ({
-    display: 'flex',
     padding: '0 20px',
     width: '100%',
-    whiteSpace: 'nowrap',
-    justifyContent: 'space-between',
-    alignItems:'center'
 }));
 const MyPosition = styled('h1')(({theme}) => ({
         whiteSpace: 'nowrap',
@@ -59,8 +55,6 @@ const Period = styled('p')(({theme}) => ({
 
 export default function CustomizedAccordions({title,period,summary}) {
   const [expanded, setExpanded] = React.useState('panel0');
-  console.log(title);
-  console.log(period);
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
@@ -69,8 +63,10 @@ export default function CustomizedAccordions({title,period,summary}) {
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
           <MyWorkHeader>
+            <div className='title-wrap'>
             <MyPosition>{title}</MyPosition>
-            <Period>{period}</Period>
+            <Period className='period'>{period}</Period>
+            </div>
           </MyWorkHeader>
         </AccordionSummary>
         <AccordionDetails>
