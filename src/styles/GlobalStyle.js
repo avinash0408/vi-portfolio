@@ -22,7 +22,35 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Handlee', cursive;
     font-size: var(--fz-xl);
     line-height: 1.3;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 
+    @media (max-width: 480px) {
+      font-size: var(--fz-lg);
+    }
+
+    &.hidden {
+      overflow: hidden;
+    }
+    &.blurIt {
+      overflow: hidden;
+      position: fixed;
+
+      header {
+        background-color: transparent;
+      }
+
+      #content > * {
+        filter: blur(5px) brightness(0.7);
+        transition: var(--transition);
+        pointer-events: none;
+        user-select: none;
+      }
+    }
   }
   #root {
     min-height: 100vh;
@@ -144,7 +172,7 @@ const GlobalStyle = createGlobalStyle`
     height: 0;
     }
 
-  
+
 `;
 
 export default GlobalStyle;
