@@ -8,7 +8,6 @@ import Menu from "./menu";
 
 const StyledHeader = styled.header`
 ${({ theme }) => theme.mixins.flexBetween};
-  position :fixed;
   top: 0;
   z-index: 11;
   padding: 0px 50px;
