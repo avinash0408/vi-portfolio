@@ -1,6 +1,6 @@
 import * as React from "react"
 import styled from 'styled-components';
-import {IntroFragment,AboutFragment,ExperienceFragment} from "../components/fragments/index";
+import {IntroFragment,AboutFragment,ExperienceFragment,ProjectFragment} from "../components/fragments/index";
 import Layout from '../components/layout';
 
 const StyledMain = styled.main`
@@ -17,6 +17,7 @@ const HomePage = ({location}) => {
         <IntroFragment/>
        <AboutFragment/> 
        <ExperienceFragment/>
+       <ProjectFragment/>
       </StyledMain>
     </Layout>
   )
