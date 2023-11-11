@@ -6,6 +6,7 @@ import {
   LinkedInIcon,
   IconLogo,
   TwitterIcon,
+  GoUrlIcon
 } from './index';
 
 const Icon = ({ name }) => {
@@ -20,6 +21,8 @@ const Icon = ({ name }) => {
       return <IconLogo />;
     case 'Twitter':
       return <TwitterIcon />;
+    case 'GoUrl':
+      return <GoUrlIcon />;
   }
 };
 

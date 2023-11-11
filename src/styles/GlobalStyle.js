@@ -190,6 +190,9 @@ const GlobalStyle = createGlobalStyle`
       margin-block-start:0.4em !important;
     }
   }
+  .goUrl{
+    padding : 0 10px;
+  }
 
 
 `;

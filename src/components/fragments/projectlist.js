@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
+import Icon from "../icons/getIcon";
 
 
 
@@ -20,7 +21,14 @@ const StyledListSection = styled.section`
     font-size : var(--fz-md);
     padding-left : 20px;
     text-wrap: wrap;
+    display :flex;
+    align-items : center;
+
   }
+  .projectTitle:hover {
+    color : var(--green);
+  }
+  
 `;
 
 const ImageOverlay = ({img}) => {
@@ -54,6 +62,7 @@ const ProjectItemFragment = ({img,name,site}) => {
            <ImageOverlay img={img}></ImageOverlay>
             <a className="projectTitle" href={site} target="_blank" rel="noopener noreferrer">
                 {name}
+                <Icon name="GoUrl"/>
             </a>
         </StyledListSection>
     );
