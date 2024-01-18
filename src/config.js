@@ -32,11 +32,7 @@ module.exports = {
       {
         name: 'Projects',
         url: '/#project',
-      },
-      {
-        name: 'Contact',
-        url: '/#contact',
-      },
+      }
     ],
     oracleFte : "Currently, I'm working with Oracle's Human Capital Management (HCM) NetSuite's team. "+
     "Proud module owner of Share Data Access and Manage Areas of Responsibility Modules. Sub-Rep for Approvals functionality in GHR - Person's team. "+

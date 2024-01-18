@@ -112,11 +112,7 @@ const NavBar = ({ itemName, itemLink, isSelected }) => {
                         </li>
                         <li>
                             <Link to="/#project">Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="/">Contact</Link>
-                        </li>
-                        
+                        </li>   
                     </ul>
                     <div>{ResumeLink}</div>
                     </StyledLinks>
