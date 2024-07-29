@@ -84,7 +84,7 @@ const StyledLinks = styled.div`
   }
 `;
 const ResumeLink = (
-    <a className="resume-button" href="/vi_resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a className="resume-button" href="/Avinash_resume.pdf" target="_blank" rel="noopener noreferrer">
       Resume
     </a>
   );
